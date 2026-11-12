@@ -11,6 +11,11 @@
       "name": "just-answer",
       "source": "./plugins/just-answer",
       "description": "目標明確、不希望模型多講話的回答模式合集：快問快答、聊天探索、單字短翻譯與規格術語提取"
+    },
+    {
+      "name": "fast-answer",
+      "source": "./plugins/fast-answer",
+      "description": "趕時間用的回答模式：以最少證據、最短篇幅快速作答，預設只憑模型記憶、最多搜尋 1 次"
     }
   ]
 }

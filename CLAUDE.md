@@ -16,7 +16,7 @@ plugins/<plugin>/.claude-plugin/plugin.json  # plugin manifest（含 version）
 plugins/<plugin>/skills/<skill>/SKILL.md
 ```
 
-呼叫方式為 `/<plugin>:<skill>`。目標相近的 skill 可合併為同一個 plugin，此時 plugin 名稱與 skill 名稱不同。目前有 `just-answer`，收容「目標明確、不希望模型多講話」的 skill（`just-asking`、`just-curious`、`just-word`）。新增這類 skill 時，在該 plugin 下加 skill 目錄並升版，不另開 plugin。
+呼叫方式為 `/<plugin>:<skill>`。目標相近的 skill 可合併為同一個 plugin，此時 plugin 名稱與 skill 名稱不同。目前有 `just-answer`，收容「目標明確、不希望模型多講話」的 skill（`just-asking`、`just-curious`、`just-word`）。新增這類 skill 時，在該 plugin 下加 skill 目錄並升版，不另開 plugin。另有 `fast-answer`，收容「趕時間、最少證據與篇幅」的 skill（`fast-asking`）。
 
 新增 plugin 時：
 

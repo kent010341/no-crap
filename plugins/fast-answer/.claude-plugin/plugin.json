@@ -1,0 +1,8 @@
+{
+  "name": "fast-answer",
+  "description": "趕時間用的回答模式：以最少證據、最短篇幅快速作答，預設只憑模型記憶、最多搜尋 1 次（fast-asking）",
+  "version": "0.1.0",
+  "author": {
+    "name": "Kent010341"
+  }
+}
