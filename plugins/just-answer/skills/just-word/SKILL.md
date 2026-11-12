@@ -1,6 +1,6 @@
 ---
 name: just-word
-description: 單字、片語的精準短翻譯。依使用者提供的情境挑出最貼切的目標語言用字，並附例句供確認；沒有情境時列出各常見語意的譯詞。僅在使用者以 /just-answer:just-word 手動呼叫時使用。
+description: 單字、片語的精準短翻譯，以及規格（spec）、標準、協定文件中的術語提取。依使用者提供的情境挑出最貼切的目標語言用字，並附例句供確認；沒有情境時列出各常見語意的譯詞。僅在使用者以 /just-answer:just-word 手動呼叫時使用。
 disable-model-invocation: true
 ---
 
