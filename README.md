@@ -27,4 +27,4 @@ plugins/<plugin>/skills/<skill>/SKILL.md
 
 | Plugin | 說明 | 使用方式 |
 | --- | --- | --- |
-| just-answer | 目標明確、不希望模型多講話的回答模式合集：快問快答、聊天探索、單字短翻譯 | `/just-answer:just-asking`、`/just-answer:just-curious`、`/just-answer:just-word <詞句>`（皆僅手動呼叫） |
+| just-answer | 目標明確、不希望模型多講話的回答模式合集：快問快答、聊天探索、單字短翻譯與規格術語提取（可附出處章節） | `/just-answer:just-asking`、`/just-answer:just-curious`、`/just-answer:just-word <詞句>`（皆僅手動呼叫） |
