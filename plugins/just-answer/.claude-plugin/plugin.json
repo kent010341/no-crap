@@ -1,7 +1,7 @@
 {
   "name": "just-answer",
-  "description": "目標明確、不希望模型多講話的回答模式合集：快問快答（just-asking）、聊天探索（just-curious）、單字短翻譯（just-word）",
-  "version": "1.0.0",
+  "description": "目標明確、不希望模型多講話的回答模式合集：快問快答（just-asking）、聊天探索（just-curious）、單字短翻譯與規格術語提取（just-word）",
+  "version": "1.0.1",
   "author": {
     "name": "Kent010341"
   }

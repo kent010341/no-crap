@@ -10,7 +10,7 @@
     {
       "name": "just-answer",
       "source": "./plugins/just-answer",
-      "description": "目標明確、不希望模型多講話的回答模式合集：快問快答、聊天探索、單字短翻譯"
+      "description": "目標明確、不希望模型多講話的回答模式合集：快問快答、聊天探索、單字短翻譯與規格術語提取"
     }
   ]
 }
