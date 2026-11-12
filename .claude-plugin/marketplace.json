@@ -1,0 +1,16 @@
+{
+  "name": "no-crap",
+  "owner": {
+    "name": "Kent010341"
+  },
+  "metadata": {
+    "description": "A Claude marketplace of plugins to stop Claude from talking crap"
+  },
+  "plugins": [
+    {
+      "name": "just-answer",
+      "source": "./plugins/just-answer",
+      "description": "目標明確、不希望模型多講話的回答模式合集：快問快答、聊天探索、單字短翻譯"
+    }
+  ]
+}
