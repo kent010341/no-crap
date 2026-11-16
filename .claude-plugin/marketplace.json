@@ -16,6 +16,11 @@
       "name": "fast-answer",
       "source": "./plugins/fast-answer",
       "description": "趕時間用的回答模式：以最少證據、最短篇幅快速作答，預設只憑模型記憶、最多搜尋 1 次"
+    },
+    {
+      "name": "loose-answer",
+      "source": "./plugins/loose-answer",
+      "description": "放行證據不足時的推斷：低證據或無證據時不拒答、不堆免責聲明，依線索自行推斷並適度發散，只用極短標記註記；可單獨使用，也可與其他 skill 疊加"
     }
   ]
 }
