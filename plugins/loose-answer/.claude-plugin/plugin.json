@@ -1,7 +1,7 @@
 {
   "name": "loose-answer",
-  "description": "放行證據不足時的推斷：低證據或無證據時不拒答、不堆免責聲明，依線索自行推斷並適度發散，只用極短標記註記；可單獨使用，也可與其他 skill 疊加（loose-asking）",
-  "version": "0.1.1",
+  "description": "放行證據不足時的推斷與估算：低證據或無證據時不拒答、不堆免責聲明，依線索自行推斷並適度發散，只用極短標記註記；估算題給量級、假設與算式；可單獨使用，也可與其他 skill 疊加（loose-asking、loose-estimate）",
+  "version": "0.2.0",
   "author": {
     "name": "Kent010341"
   }

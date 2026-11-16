@@ -29,7 +29,7 @@ plugins/<plugin>/skills/<skill>/SKILL.md
 | --- | --- |
 | just-answer | 目標明確、不希望模型多講話的回答模式合集 |
 | fast-answer | 趕時間用：最少證據、最短篇幅 |
-| loose-answer | 放行證據不足時的推斷：不拒答、不堆免責，只用短標記註記；可單用或疊加 |
+| loose-answer | 放行證據不足時的推斷與估算：不拒答、不堆免責，只用短標記註記；可單用或疊加 |
 
 ## Skills
 
@@ -43,3 +43,4 @@ plugins/<plugin>/skills/<skill>/SKILL.md
 | `just-answer:just-ref` | 找規格／文件中描述某功能的原文，只給位置與一字不差的引文，依符合度排序；支援線上文件與本地檔案、目錄 | `/just-answer:just-ref SIP fork`<br>`/just-answer:just-ref <檔案或目錄> <功能描述>` |
 | `fast-answer:fast-asking` | 急問急答：預設憑記憶、最多搜尋 1 次 | `/fast-answer:fast-asking <問題>` |
 | `loose-answer:loose-asking` | 低證據／無證據時放行推斷與適度發散，只留一個短標記；可單獨使用或與其他 skill 疊加 | `/loose-answer:loose-asking <問題>`<br>`/just-answer:just-curious /loose-answer:loose-asking <話題>` |
+| `loose-answer:loose-estimate` | 估算題（含虛構作品設定）：缺資料也給量級、區間、假設（區分查到／自設）與算式 | `/loose-answer:loose-estimate <估算問題>` |
