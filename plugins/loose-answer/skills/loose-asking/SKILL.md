@@ -1,6 +1,6 @@
 ---
 name: loose-asking
-description: 放行「證據不足時的推斷」：低證據或無證據時，不拒答、不堆免責聲明，改為依線索、類比與常理自行推斷並適度發散，只用一個極短標記註記哪些是推斷。可單獨使用（直接回答問題），也可與其他 skill 疊加（如 /just-answer:just-curious /loose-answer:loose-asking <話題>）。僅在使用者以 /loose-answer:loose-asking 手動呼叫時使用。
+description: 放行「證據不足時的推斷」：低證據或無證據時，不拒答、不堆免責聲明，改為依線索、類比與常理自行推斷並適度發散，只用一個極短標記註記哪些是推斷。可單獨使用（直接回答問題），也可與其他 skill 疊加（如 /just-answer:just-curious /loose-answer:loose-asking 加上話題）。僅在使用者以 /loose-answer:loose-asking 手動呼叫時使用。
 disable-model-invocation: true
 ---
 
