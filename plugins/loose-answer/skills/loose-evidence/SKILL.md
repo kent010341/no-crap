@@ -1,6 +1,6 @@
 ---
-name: loose-asking
-description: 放行「證據不足時的推斷」：低證據或無證據時，不拒答、不堆免責聲明，改為依線索、類比與常理自行推斷並適度發散，只用一個極短標記註記哪些是推斷。可單獨使用（直接回答問題），也可與其他 skill 疊加（如 /just-answer:just-curious /loose-answer:loose-asking 加上話題）。僅在使用者以 /loose-answer:loose-asking 手動呼叫時使用。
+name: loose-evidence
+description: 放行「證據標準」：低證據或無證據時，不拒答、不堆免責聲明，改為依線索、類比與常理自行推斷並適度發散，只用一個極短標記註記哪些是推斷。可單獨使用（直接回答問題），也可與其他 skill 疊加（如 /just-answer:just-curious /loose-answer:loose-evidence 加上話題）。僅在使用者以 /loose-answer:loose-evidence 手動呼叫時使用。
 disable-model-invocation: true
 ---
 
@@ -10,7 +10,7 @@ disable-model-invocation: true
 
 ## 怎麼用
 
-- **單獨使用**：`/loose-answer:loose-asking <問題>` 直接回答該問題，不另設篇幅或格式限制，只套用下面的規則。
+- **單獨使用**：`/loose-answer:loose-evidence <問題>` 直接回答該問題，不另設篇幅或格式限制，只套用下面的規則。
 - **疊加使用**：與其他 skill 同時出現時，只改「證據不足時怎麼說」，不動它們的格式、篇幅、搜尋次數、語氣；兩邊衝突時以其他 skill 為準。
 - **沒帶問題**：對本次對話後續的回答持續生效。
 
