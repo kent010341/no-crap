@@ -8,6 +8,8 @@
 - 來源多半是既有 prompt（如 ChatGPT MyGPT），改寫時忠於原意：不確定就問使用者，嚴禁自行延伸規則或功能。
 - 文件與 skill 內容使用繁體中文。
 - 新增或修改 skill 後，必須用 skill-creator 的 `eval-viewer/generate_review.py` 產生網頁報告（Cowork／無顯示環境用 `--static`）並開給使用者，不可只用文字對照取代。使用者人工 review 並明確放行前，不得 commit 或 push；回饋有修改就再跑一輪並重新產生報告。
+  - 例外：不影響行為的格式／載入錯誤修正（如 frontmatter、description 不合規）可直接 commit 並 push，不必再經人工 review，仍須先跑驗證指令並升 patch 版。
+- SKILL.md 的 `description` 不可含角括號（`<` `>`），例如 `<問題>`、`<話題>` 這類佔位符。載入時會報「description cannot contain XML tags」，且 claude.ai 會把角括號移除。佔位符改用中文描述（如「加上話題」）。`claude plugin validate` 不一定抓得到，新增或修改 description 後自行 grep 檢查。
 
 ## 目錄結構
 
