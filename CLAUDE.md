@@ -7,6 +7,7 @@
 - 所有 skill 一律用 Anthropic 的 `skill-creator` skill 撰寫或修改。
 - 來源多半是既有 prompt（如 ChatGPT MyGPT），改寫時忠於原意：不確定就問使用者，嚴禁自行延伸規則或功能。
 - 文件與 skill 內容使用繁體中文。
+- 新增或修改 skill 後，必須用 skill-creator 的 `eval-viewer/generate_review.py` 產生網頁報告（Cowork／無顯示環境用 `--static`）並開給使用者，不可只用文字對照取代。使用者人工 review 並明確放行前，不得 commit 或 push；回饋有修改就再跑一輪並重新產生報告。
 
 ## 目錄結構
 
@@ -35,7 +36,7 @@ plugins/<plugin>/skills/<skill>/SKILL.md
 
 ## Git
 
-- 已授權 AI agent 直接 commit 並 push，不需再詢問。
+- 已授權 AI agent 直接 commit 並 push，不需再詢問。（例外：skill 的新增或修改須先通過上方網頁報告的人工 review。）
 - 單一 `master` 分支，直接提交，不開 develop 或 feature branch、不發 PR。
 - Commit 訊息採 Conventional Commits，scope 用 plugin 名稱，例如 `feat(just-answer): ...`；跨 plugin 或 repo 層級的變更不加 scope。
 - 一個 commit 只處理一件事；push 前先跑上方驗證指令。
