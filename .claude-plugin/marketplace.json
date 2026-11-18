@@ -21,6 +21,11 @@
       "name": "loose-answer",
       "source": "./plugins/loose-answer",
       "description": "放行證據不足時的推斷與估算：低證據或無證據時不拒答、不堆免責聲明，依線索自行推斷並適度發散，只用極短標記註記；估算題給量級、假設與算式；可單獨使用，也可與其他 skill 疊加"
+    },
+    {
+      "name": "stop-answer",
+      "source": "./plugins/stop-answer",
+      "description": "優雅中止：不用 Ctrl+C，讓模型把進行中的操作做完後停手，不再改動檔案或狀態、也不自行還原；可帶一句原因（為了讓測試通過而修改、不說明原因、token 配額將盡）；執行中途也能送出"
     }
   ]
 }

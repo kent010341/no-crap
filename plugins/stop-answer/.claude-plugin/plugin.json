@@ -1,0 +1,8 @@
+{
+  "name": "stop-answer",
+  "description": "優雅中止：使用者要模型停止目前的做法時，讓進行中的操作做完、之後不再改動檔案或狀態；依原因分 skill：stop-goodhart（為了讓測試通過而修改）、stop-now（不說明原因）、stop-quota（token 配額將盡）",
+  "version": "0.1.0",
+  "author": {
+    "name": "Kent010341"
+  }
+}

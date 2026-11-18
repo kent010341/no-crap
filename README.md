@@ -30,6 +30,7 @@ plugins/<plugin>/skills/<skill>/SKILL.md
 | just-answer | 目標明確、不希望模型多講話的回答模式合集 |
 | fast-answer | 趕時間用：最少證據、最短篇幅；含長內容速讀摘要 |
 | loose-answer | 放行證據不足時的推斷與估算：不拒答、不堆免責，只用短標記註記；可單用或疊加 |
+| stop-answer | 優雅中止：讓模型把進行中的操作做完後停手，不再改動檔案或狀態；可帶一句原因 |
 
 ## Skills
 
@@ -45,3 +46,6 @@ plugins/<plugin>/skills/<skill>/SKILL.md
 | `fast-answer:fast-tldr` | 急速摘要：貼文、網址、檔案、目錄或前一則回答壓成極短重點；保留數字、日期時間、人名；原文無結論不硬湊；只影響這一次 | `/fast-answer:fast-tldr <文字、網址、檔案或目錄>`<br>`/fast-answer:fast-tldr`（摘要前一則回答） |
 | `loose-answer:loose-evidence` | 低證據／無證據時放行推斷與適度發散，只留一個短標記；可單獨使用或與其他 skill 疊加 | `/loose-answer:loose-evidence <問題>`<br>`/just-answer:just-curious /loose-answer:loose-evidence <話題>` |
 | `loose-answer:loose-estimate` | 估算題（含虛構作品設定）：缺資料也給量級、區間、假設（區分查到／自設）與算式 | `/loose-answer:loose-estimate <估算問題>` |
+| `stop-answer:stop-goodhart` | 優雅中止：模型正為了讓測試通過而修改（Goodhart 問題）；執行中途也能送出 | `/stop-answer:stop-goodhart`<br>`/stop-answer:stop-goodhart 補充說明` |
+| `stop-answer:stop-now` | 優雅中止：不說明原因 | `/stop-answer:stop-now` |
+| `stop-answer:stop-quota` | 優雅中止：token 配額將盡 | `/stop-answer:stop-quota` |
