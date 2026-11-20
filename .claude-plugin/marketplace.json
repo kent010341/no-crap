@@ -26,6 +26,11 @@
       "name": "stop-answer",
       "source": "./plugins/stop-answer",
       "description": "優雅中止：不用 Ctrl+C，讓模型把進行中的操作做完後停手，不再改動檔案或狀態、也不自行還原；可帶一句原因（為了讓測試通過而修改、不說明原因、token 配額將盡）；執行中途也能送出"
+    },
+    {
+      "name": "plain-answer",
+      "source": "./plugins/plain-answer",
+      "description": "讓輸出的文句簡單、低複雜度，但不失精準、不亂講：科普式回答、把看不懂的內容用簡單的話重講、簡單詞彙與文法的翻譯、依你的意思寫出簡單的文字（回信、訊息等）；預設讀者是沒有相關背景的成年人"
     }
   ]
 }
