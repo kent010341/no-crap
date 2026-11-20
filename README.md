@@ -30,6 +30,7 @@ plugins/<plugin>/skills/<skill>/SKILL.md
 | just-answer | 目標明確、不希望模型多講話的回答模式合集 |
 | fast-answer | 趕時間用：最少證據、最短篇幅；含長內容速讀摘要 |
 | loose-answer | 放行證據不足時的推斷與估算：不拒答、不堆免責，只用短標記註記；可單用或疊加 |
+| strict-answer | 強證據標準：事實都要查證並附出處，找不到證據就刪掉或明講沒找到；可核實上一則回答，也可疊加 |
 | stop-answer | 優雅中止：讓模型把進行中的操作做完後停手，不再改動檔案或狀態；可帶一句原因 |
 | plain-answer | 簡單易懂：文句簡單、低複雜度但不失精準；科普問答、看不懂就重講、簡單翻譯、依你的意思寫簡單的文字；預設讀者是沒有相關背景的成年人 |
 
@@ -47,6 +48,7 @@ plugins/<plugin>/skills/<skill>/SKILL.md
 | `fast-answer:fast-tldr` | 急速摘要：貼文、網址、檔案、目錄或前一則回答壓成極短重點；保留數字、日期時間、人名；原文無結論不硬湊；只影響這一次 | `/fast-answer:fast-tldr <文字、網址、檔案或目錄>`<br>`/fast-answer:fast-tldr`（摘要前一則回答） |
 | `loose-answer:loose-evidence` | 低證據／無證據時放行推斷與適度發散，只留一個短標記；可單獨使用或與其他 skill 疊加 | `/loose-answer:loose-evidence <問題>`<br>`/just-answer:just-curious /loose-answer:loose-evidence <話題>` |
 | `loose-answer:loose-estimate` | 估算題（含虛構作品設定）：缺資料也給量級、區間、假設（區分查到／自設）與算式 | `/loose-answer:loose-estimate <估算問題>` |
+| `strict-answer:strict-evidence` | 強證據：事實逐項查證（本地或線上看前後文）並附出處，程式引用用 `Foo#bar` 或 `File.java:123`；找不到就刪或明講沒找到；單獨呼叫時核實上一則回答（僅一次） | `/strict-answer:strict-evidence`<br>`/strict-answer:strict-evidence <問題>`<br>`/just-answer:just-asking /strict-answer:strict-evidence <問題>` |
 | `stop-answer:stop-goodhart` | 優雅中止：模型正為了讓測試通過而修改（Goodhart 問題）；執行中途也能送出 | `/stop-answer:stop-goodhart`<br>`/stop-answer:stop-goodhart 補充說明` |
 | `stop-answer:stop-now` | 優雅中止：不說明原因 | `/stop-answer:stop-now` |
 | `stop-answer:stop-quota` | 優雅中止：token 配額將盡 | `/stop-answer:stop-quota` |

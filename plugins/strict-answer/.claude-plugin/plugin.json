@@ -1,0 +1,8 @@
+{
+  "name": "strict-answer",
+  "description": "強證據標準：每個事實性陳述都要有查證過的出處，找不到證據就刪掉或明講沒找到；可單獨核實上一則回答，也可與其他 skill 疊加（strict-evidence）",
+  "version": "0.1.0",
+  "author": {
+    "name": "Kent010341"
+  }
+}
